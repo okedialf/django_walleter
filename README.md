@@ -23,7 +23,7 @@
 <br>
 
 ## Usage
-Add the  `HasWallet`  maixin to your model.
+Add the  `HasWallet`  mixin to your model.
 
 ```python
 from django.db import models
