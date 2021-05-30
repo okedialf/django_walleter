@@ -27,9 +27,9 @@ def deposit(wallet, amount, meta=None):
     wallet.save()
 
     transaction = Transaction(
-        type=Transaction.TYPE_WITHDRAW,
+        type=Transaction.TYPE_DEPOSIT,
         amount=amount,
-        from_wallet=wallet,
+        to_wallet=wallet,
         meta=meta
     ).save()
     return transaction
